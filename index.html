@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iX Global Recognition</title>
+    <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="./css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- MOBILE RESPONSIVE NAVBAR -->
+    <header>
+        <nav id="navbar" class="nav-bar">
+            <ul>
+                <li class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="./assets/IXGlobal_FINALLogo-03.png" height="75px" alt="iX Global Logo" />
+                    </a>
+                </li>
+                <!-- <li class="nav-items"><a href="./publications.html">Publications</a></li> -->
+                <li class="nav-items"><a href="#">Ranks</a></li>
+                <li class="nav-items"><a href="#">Sales</a></li>
+                <li id="burger-menu" class="btn"><i class="fas fa-bars"></i></li>
+            </ul>
+        </nav>
+
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    $('.nav-items').toggleClass("show");
+                    $('ul li').toggleClass("hide");
+                });
+            });
+        </script>
+    </header>
+
+    <article>
+        <main class="main">
+            <!-- SECTION - HEADER -->
+            <section class="main-header-section">
+                <div class="main-hero-header">
+                    <h1>iX Global Recognition</h1>
+                    <h4 class="header-details">Innovate. Inspire. Impact.</h4>
+                </div>
+            </section>
+            <!-- SECTION 1 - UNDERBANKED AND UNBANKED -->
+            <section class="section section-1">
+                <div>
+                    <h1 class="heading">Joe Martinez <span class="header-black-txt">Elite Ambassador</span></h1>
+                    <p class="heading-content">We have learned that true success comes only as a result of personal development, and when you strive to become the greatest version of yourself is precisely when you are at your utmost capacity to do what you were meant to do and share that gift with the world, thus helping all of us be better through your own result. We are all connected, and at iXLife we know that your success is our success.
+                    </p><br>
+                    <p class="heading-content">
+                        "Gain a Deeper Understanding Of Who You Are and How You Can Become More."
+                    </p>
+                </div>
+                <img class="images" src="./assets/joe-ceo.jpg" width="550px" alt="iX Card" />
+            </section>
+
+
+            <!-- SECTION 2 -->
+            <section class="section section-2">
+                <div>
+                    <h1 class="heading">Paul Barlow <span class="header-black-txt">Ambassador</span></h1>
+                    <p class="heading-content">Become a Brand Ambassador. Help share our message with the world. If you are looking for a way to truly help people change their lives then the iX Ambassador program is for you! Our motto is: Have Fun, Make Money, and Make an Impact. 
+                    </p><br>
+                    <p class="heading-content">
+                        iX is a powerful platform that will help change peoples lives! iX was created for those who want to create a positive impact in this world! If you are one of those individuals we would love to partner with you! 
+                    </p><br>
+                    <p class="heading-content">
+                        Our Ambassador program is not open to just anyone and you must pass through a rigorous qualification process in order to be approved! If you feel like you can make the cut please Apply Below!
+                    </p>
+                </div>
+                <img class="images" src="./assets/paul-pres.png" width="550px" alt="iX Card" />
+            </section>
+
+            <!-- SECTION 3 -->
+            <section class="section section-3">
+                <div>
+                    <h1 class="heading">Luke Epps <span class="header-black-txt">Influencer</span></h1>
+                    <p class="heading-content">We have learned that true success comes only as a result of personal development, and when you strive to become the greatest version of yourself is precisely when you are at your utmost capacity to do what you were meant to do and share that gift with the world, thus helping all of us be better through your own result. We are all connected, and at iXLife we know that your success is our success.
+                    </p><br>
+                    <p class="heading-content">
+                        "Gain a Deeper Understanding Of Who You Are and How You Can Become More."
+                    </p>
+                </div>
+                <img class="images" src="./assets/luke.png" width="750px" alt="iX Card" />
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <img class="footer-img" src="./assets/IXGlobal_FINALLogo-03.png" height="100px" alt="Financial Tools" />
+            </div>
+            <div>
+                <p>© 2022 iX Global</p>
+            </div>
+        </footer>
+    </article>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var prevScrollPos = window.pageYOffset;
+
+        function myFunction() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-187.5px";
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+
+</body>
+
+</html>
